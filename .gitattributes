@@ -1,0 +1,2 @@
+photos/attractions_nearby/*.mp4 filter=lfs diff=lfs merge=lfs -text
+photos/attractions_nearby/*.MOV filter=lfs diff=lfs merge=lfs -text
