@@ -1,0 +1,187 @@
+/* ============================================================
+   bieszkacje.pl — "Deep Forest" design system
+   A bespoke earthy/forest system for a family-run
+   Bieszczady mountain holiday house. No Ledger DNA here.
+   ============================================================ */
+
+:root {
+  /* ---- FOREST (primary greens) ---- */
+  --forest-950: #131d16;
+  --forest-900: #1a261c;
+  --forest-800: #243528;
+  --forest-700: #2e3d2f;   /* core brand green */
+  --forest-600: #3b4d3c;
+  --forest-500: #4d6149;
+  --moss-500:   #7a8b6f;
+  --moss-400:   #98a888;
+  --sage-300:   #c2ccb0;
+
+  /* ---- AMBER / HONEY (accent) ---- */
+  --amber-800: #8a4f1a;
+  --amber-700: #a8651f;
+  --amber-600: #c2782a;
+  --amber-500: #c98a3a;    /* core accent */
+  --amber-400: #d99a4e;
+  --honey-300: #e8c07a;
+  --honey-200: #f0d6a3;
+
+  /* ---- CREAM / PAPER (light backgrounds) ---- */
+  --cream-50:  #faf6ec;
+  --cream-100: #f5efe3;    /* page background */
+  --cream-200: #efe7d6;
+  --paper-300: #e6dcc6;
+  --paper-400: #d8cbb0;
+
+  /* ---- BARK / EARTH (text + browns) ---- */
+  --bark-900: #2a241b;     /* primary text (warm near-black) */
+  --bark-700: #4a3f2e;
+  --bark-500: #6b5c44;     /* soft text */
+  --bark-300: #9a8a6e;
+
+  /* ---- MIST (cool secondary accent) ---- */
+  --mist-500: #758c8f;
+  --mist-400: #8fa3a8;
+  --mist-300: #aebfc1;
+  --mist-200: #cdd8d8;
+
+  /* ---- SEMANTIC TOKENS (overridden per palette via JS) ---- */
+  --bg:           var(--cream-100);
+  --bg-alt:       var(--cream-200);
+  --bg-deep:      var(--forest-700);   /* dark sections */
+  --bg-deep-2:    var(--forest-900);
+  --surface:      #ffffff;
+  --surface-warm: var(--cream-50);
+  --text:         var(--bark-900);
+  --text-soft:    var(--bark-500);
+  --text-on-dark: #f1ead9;
+  --text-on-dark-soft: #cabfa6;
+  --primary:      var(--forest-700);
+  --accent:       var(--amber-500);
+  --accent-deep:  var(--amber-700);
+  --line:         color-mix(in srgb, var(--bark-900) 12%, transparent);
+  --line-dark:    rgba(241,234,217,0.16);
+
+  /* ---- TYPE ---- */
+  --font-display: 'Alegreya', Georgia, serif;
+  --font-body:    'Mulish', system-ui, sans-serif;
+  --font-script:  'Caveat', cursive;
+  --font-mono:    'Mulish', system-ui, sans-serif;
+
+  /* ---- SPACING (8px grid) ---- */
+  --s1: 8px; --s2: 16px; --s3: 24px; --s4: 32px; --s5: 40px;
+  --s6: 48px; --s7: 64px; --s8: 80px; --s9: 96px; --s10: 128px;
+
+  /* ---- RADII (soft, organic but restrained) ---- */
+  --r-sm: 6px; --r-md: 12px; --r-lg: 20px; --r-xl: 28px; --r-pill: 999px;
+
+  /* ---- SHADOWS (soft, warm, low) ---- */
+  --sh-sm: 0 1px 3px rgba(42,36,27,0.08), 0 1px 2px rgba(42,36,27,0.06);
+  --sh-md: 0 8px 24px rgba(42,36,27,0.10), 0 2px 6px rgba(42,36,27,0.06);
+  --sh-lg: 0 24px 60px rgba(42,36,27,0.18), 0 6px 18px rgba(42,36,27,0.10);
+
+  /* ---- MOTION ---- */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+  --dur: 420ms;
+
+  --maxw: 1240px;
+  --grain-opacity: 0.05;
+}
+
+/* ============ RESET / BASE ============ */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--bg);
+  font-size: 18px;
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+img { display: block; max-width: 100%; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+a { color: inherit; text-decoration: none; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.06;
+  letter-spacing: -0.01em;
+  margin: 0;
+  color: var(--text);
+}
+p { margin: 0; text-wrap: pretty; }
+
+/* optional film-grain texture overlay */
+body::after {
+  content: "";
+  position: fixed; inset: 0; z-index: 9990;
+  pointer-events: none;
+  opacity: var(--grain-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}
+
+/* ============ LAYOUT HELPERS ============ */
+.wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 32px; }
+section { position: relative; }
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-deep);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.eyebrow::before {
+  content: "";
+  width: 28px; height: 2px;
+  background: var(--accent);
+  display: inline-block;
+}
+.eyebrow.on-dark { color: var(--honey-300); }
+
+.section-head { max-width: 900px; margin-bottom: var(--s6); }
+.section-head h2 {
+  font-size: clamp(34px, 5vw, 58px);
+  margin-top: var(--s2);
+}
+.section-head .lede {
+  margin-top: var(--s3);
+  font-size: 20px;
+  color: var(--text-soft);
+  max-width: 60ch;
+}
+.section-head .lede.on-dark { color: var(--text-on-dark-soft); }
+
+.pad { padding-top: var(--s10); padding-bottom: var(--s10); }
+@media (max-width: 760px){ .pad { padding-top: var(--s8); padding-bottom: var(--s8); } }
+
+/* ============ BUTTONS ============ */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  font-family: var(--font-body); font-weight: 800; font-size: 16px;
+  padding: 15px 28px; border-radius: var(--r-pill);
+  transition: transform var(--dur) var(--ease), background var(--dur) var(--ease), color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+  letter-spacing: 0.01em;
+}
+.btn-primary { background: var(--accent); color: var(--forest-950); box-shadow: var(--sh-sm); }
+.btn-primary:hover { background: var(--amber-400); transform: translateY(-2px); box-shadow: var(--sh-md); }
+.btn-ghost { background: transparent; color: var(--text); border: 1.5px solid var(--line); }
+.btn-ghost:hover { border-color: var(--primary); background: color-mix(in srgb, var(--primary) 6%, transparent); }
+.btn-on-dark { background: transparent; color: var(--text-on-dark); border: 1.5px solid var(--line-dark); }
+.btn-on-dark:hover { background: rgba(241,234,217,0.1); }
+
+/* ============ KEYFRAMES ============ */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes kenburns { from { transform: scale(1.0); } to { transform: scale(1.12); } }
+@keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
+
+.reveal { opacity: 0; }
+.reveal.in { animation: fadeUp 0.9s var(--ease) forwards; }

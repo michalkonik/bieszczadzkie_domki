@@ -1,0 +1,169 @@
+# ============================================================
+#  bieszkacje.pl  —  TREŚĆ STRONY  /  SITE CONTENT
+# ------------------------------------------------------------
+#  Edytuj ten plik, aby zmienić WSZYSTKIE teksty, zdjęcia
+#  i dane kontaktowe na stronie. Nie trzeba dotykać kodu.
+#
+#  • Każde pole tekstowe ma dwie wersje:  { pl: "...", en: "..." }
+#  • Zdjęcia ( image / portrait ):  wklej pełny adres URL  https://...
+#    albo nazwę pliku wgranego obok strony, np.  "foto/dom1.jpg"
+#  • video: true   →  na slajdzie pojawi się plakietka "FILM"
+#  • Kolejność elementów na liście = kolejność na stronie.
+# ============================================================
+
+# ---------- DANE KONTAKTOWE / CONTACT DETAILS ----------
+site:
+  phone:        "+48 536 164 536"         
+  phone_link:   "+48536164536"            
+  email:        "genowefa.konik@gmail.com"
+  address:      "Teleśnica Oszwarowa 16, 38-700 Ustrzyki Dolne"
+  facebook:     "https://www.facebook.com/bieszczady.domki.konik"
+  facebook_label: "bieszczady.domki.konik"
+  coords_label: "49.3°N · 22.5°E — Bieszczady, PL"
+
+# ---------- MENU / NAVIGATION ----------
+nav:
+  - { id: gospodarze, label: { pl: Gospodarze,  en: Your hosts } }
+  - { id: domki,      label: { pl: Domki,       en: The houses } }
+  - { id: atrakcje,   label: { pl: Atrakcje,    en: Things to do } }
+  - { id: opinie,     label: { pl: Opinie,      en: Reviews } }
+  - { id: kontakt,    label: { pl: Kontakt,     en: Contact } }
+
+# ---------- SEKCJA POWITALNA / HERO ----------
+hero:
+  kicker:   { pl: "Witajcie w Bieszczadach", en: "Welcome to the Bieszczady" }
+  # tagline = lista linijek; ostatnia linijka jest wyróżniona kolorem
+  tagline:
+    pl: ["Cisza, las", "i niebo pełne", "gwiazd."]
+    en: ["Silence, forest,", "and a sky full", "of stars."]
+  sub:
+    pl: "Dwa domki dla rodzin i marzycieli — w sercu Teleśnicy Oszwarowej, w pobliżu Jeziora Solińskiego i dzikich połonin."
+    en: "Two wooden houses for families and dreamers — in the heart of Teleśnica Oszwarowa, near Lake Solina and the wild high meadows."
+  cta_primary: { pl: "Sprawdź wolne terminy", en: "Check availability" }
+  cta_ghost:   { pl: "Obejrzyj domki",        en: "Tour the houses" }
+  # Zdjęcia hero pobierane automatycznie z folderu photos/main_photo
+  # (liczba slajdów = liczba plików w folderze; tytuły z nazw plików)
+  photos_folder: main_photo
+
+# ---------- GOSPODARZE / YOUR HOSTS ----------
+hosts:
+  eyebrow:   { pl: Gospodarze, en: Your hosts }
+  title:     { pl: "U nas jesteście jak u rodziny", en: "With us, you're family" }
+  signature: "Genowefa & Adam"
+  # Portret pobierany automatycznie — pierwsze zdjęcie z folderu photos/family
+  photos_folder: family
+  portrait:  "https://images.unsplash.com/photo-1542596768-5d1d21f1cf98?auto=format&fit=crop&w=1100&q=80"
+  # body = lista akapitów (pierwszy jest większy)
+  body:
+    pl:
+      - "Jesteśmy Genowefa i Adam — od ponad dwudziestu lat mieszkamy na końcu wsi, tam gdzie droga zamienia się w leśną ścieżkę, a rano sarny zaglądają pod okna."
+      - "Nasze domki budowaliśmy własnymi rękami, z myślą o ludziach, którym — tak jak nam — brakuje ciszy. Przyjeżdżajcie z dziećmi, z psem, ze znajomymi. Rozpalimy ognisko, doradzimy szlaki i nalejemy herbaty z miętą prosto z ogrodu."
+    en:
+      - "We're Genowefa and Adam — for over twenty years we've lived at the very end of the village, where the road turns into a forest path and deer peer under the windows at dawn."
+      - "We built our houses with our own hands, for people who — like us — crave quiet. Come with your kids, your dog, your friends. We'll light the fire, point you to the best trails, and pour you mint tea straight from the garden."
+  stamp: { pl: "Prowadzone\nz sercem", en: "Run with\nheart", since: "od 2003" }
+  pets:
+    - { name: Muszka,     glyph: "🐕", color: "#a8651f", role: { pl: "pies-przewodnik", en: "trail dog" } }
+    - { name: Bartek,     glyph: "🐈", color: "#4d6149", role: { pl: "kot dachowiec",   en: "house cat" } }
+    - { name: Kłopot,     glyph: "🐈‍⬛", color: "#6b5c44", role: { pl: "kot psotnik",     en: "the troublemaker" } }
+    - { name: Czarnuszka, glyph: "🐈‍⬛", color: "#2e3d2f", role: { pl: "kotka-królowa",   en: "queen of the porch" } }
+
+# ---------- NAGŁÓWEK SEKCJI DOMKÓW / HOUSES HEADER ----------
+houses_section:
+  eyebrow: { pl: "Nasze domki", en: "The houses" }
+  title:   { pl: "Dwa domki w jednym dachu", en: "Two homes under one roof" }
+  lede:
+    pl: "Oba domki mieszczą się w jednym drewnianym budynku, rozdzielone ścianą — niezależne wejścia, pełna prywatność. Każdy pomieści od 4 do 6 osób."
+    en: "Both houses share one wooden building, divided by a wall — separate entrances, full privacy. Each sleeps 4 to 6 guests."
+
+# ---------- DOMKI / THE HOUSES ----------
+houses:
+  - num: "01"
+    name: { pl: "Domek większy", en: "The larger house" }
+    lede:
+      pl: "Przestronny domek na jednym poziomie — wygodny dla rodziny z dziećmi i dla starszych gości. W pełni wyposażona kuchnia i miejsce, w którym chce się zostać dłużej."
+      en: "A spacious single-level house — easy for families with kids and older guests alike. A fully equipped kitchen and a place you'll want to linger in."
+    price:      "od 450"
+    price_unit: { pl: "zł / noc", en: "PLN / night" }
+    features:
+      - { icon: users, t: { pl: "4–6 osób",            en: "sleeps 4–6" } }
+      - { icon: home,  t: { pl: "na jednym poziomie",  en: "single level" } }
+      - { icon: flame, t: { pl: "w pełni wyposażony",  en: "fully equipped" } }
+      - { icon: dog,   t: { pl: "przyjazny zwierzętom", en: "pet friendly" } }
+    # Zdjęcia pobierane automatycznie z folderu photos/house_1
+    photos_folder: house_1
+  - num: "02"
+    name: { pl: "Domek mniejszy", en: "The smaller house" }
+    lede:
+      pl: "Kameralny, dwupoziomowy domek z sypialniami na piętrze. Idealny na rodzinną przygodę — na dole wspólny salon, na górze cichy sen pod skosami dachu."
+      en: "A cosy two-storey house with bedrooms upstairs. Perfect for a family adventure — a shared living room below, quiet sleep under the eaves above."
+    price:      "od 380"
+    price_unit: { pl: "zł / noc", en: "PLN / night" }
+    features:
+      - { icon: users,  t: { pl: "4–6 osób",        en: "sleeps 4–6" } }
+      - { icon: layers, t: { pl: "dwa poziomy",     en: "two floors" } }
+      - { icon: wifi,   t: { pl: "Wi-Fi i kuchnia", en: "Wi-Fi + kitchen" } }
+      - { icon: tent,   t: { pl: "miejsce na ognisko", en: "fire pit" } }
+    # Zdjęcia pobierane automatycznie z folderu photos/house_2
+    photos_folder: house_2
+
+# ---------- ATRAKCJE / THINGS TO DO ----------
+attractions:
+  eyebrow: { pl: "Co robić", en: "Things to do" }
+  title:   { pl: "Bieszczady na wyciągnięcie ręki", en: "The Bieszczady at your doorstep" }
+  lede:
+    pl: "Od progu domku w kilkanaście minut jesteście nad wodą albo na szlaku. A dalej czeka cały dziki region."
+    en: "From the doorstep you're at the water or on a trail within minutes. And beyond that, a whole wild region awaits."
+  tabs:
+    - { id: nearby, label: { pl: "W okolicy",  en: "Nearby" } }
+    - { id: region, label: { pl: "Cały region", en: "Wider region" } }
+  # Każda zakładka to pokaz slajdów budowany automatycznie z folderu.
+  # Liczba zdjęć/filmów = liczba plików w folderze; tytuły z nazw plików.
+  nearby_folder: attractions_nearby
+  region_folder: attractions_wider_region
+
+# ---------- OPINIE / REVIEWS ----------
+reviews:
+  eyebrow: { pl: "Opinie gości", en: "Guest reviews" }
+  title:   { pl: "Wracają do nas całymi rodzinami", en: "Guests return — whole families of them" }
+  score:   "5,0"
+  count:   { pl: "na podstawie 128 opinii", en: "from 128 reviews" }
+  items:
+    - { name: "Marta Kowalska",      color: "#a8651f", when: { pl: "2 tygodnie temu", en: "2 weeks ago" }, text: { pl: "Najpiękniejszy urlop od lat. Domek pachnący drewnem, rano mgła nad doliną, a wieczorem ognisko i niebo pełne gwiazd. Muszka odprowadzała nas na każdy spacer ❤️", en: "The most beautiful holiday in years. A house smelling of wood, mist over the valley at dawn, a fire and a sky full of stars at night. Muszka walked us on every hike ❤️" } }
+    - { name: "Piotr Adamczyk",      color: "#4d6149", when: { pl: "miesiąc temu", en: "a month ago" }, text: { pl: "Genowefa i Adam to najcieplejsi gospodarze, jakich spotkaliśmy. Cisza, drewno i absolutny spokój — lepiej się nie da.", en: "Genowefa and Adam are the warmest hosts we've ever met. Quiet, wood and total calm — it doesn't get better." } }
+    - { name: "Anna Nowak",          color: "#758c8f", when: { pl: "miesiąc temu", en: "a month ago" }, text: { pl: "Cisza, las i absolutny spokój. Dzieci nie chciały wracać do domu. Już rezerwujemy na przyszły rok!", en: "Silence, forest and total peace. The kids didn't want to go home. Already booking for next year!" } }
+    - { name: "Tomasz Lewandowski",  color: "#c2782a", when: { pl: "2 miesiące temu", en: "2 months ago" }, text: { pl: "Idealna baza wypadowa nad Solinę i w góry. Wszystko dopięte na ostatni guzik, a koty rozkradły nam serca.", en: "A perfect base for Solina and the mountains. Everything thought through, and the cats stole our hearts." } }
+    - { name: "Karolina Wójcik",     color: "#6b5c44", when: { pl: "3 miesiące temu", en: "3 months ago" }, text: { pl: "Drugi raz i na pewno nie ostatni. Tu naprawdę można zwolnić i odetchnąć daleko od miasta.", en: "Our second time and certainly not the last. You can truly slow down and breathe far from the city here." } }
+    - { name: "Michał Zieliński",    color: "#2e3d2f", when: { pl: "3 miesiące temu", en: "3 months ago" }, text: { pl: "Dwa domki, jeden spokój. Polecamy każdemu, kto marzy o prawdziwych Bieszczadach.", en: "Two houses, one deep calm. We recommend it to anyone dreaming of the real Bieszczady." } }
+
+# ---------- KONTAKT / CONTACT ----------
+contact:
+  eyebrow: { pl: "Kontakt", en: "Get in touch" }
+  title:   { pl: "Zarezerwuj swój kawałek ciszy", en: "Reserve your piece of quiet" }
+  lede:    { pl: "Napiszcie lub zadzwońcie — odpowiadamy szybko i z radością pomożemy zaplanować pobyt.", en: "Write or call — we reply quickly and would love to help you plan your stay." }
+  labels:  # etykiety pól z danymi (wartości pochodzą z sekcji 'site')
+    address:  { pl: "Adres",    en: "Address" }
+    phone:    { pl: "Telefon",  en: "Phone" }
+    email:    { pl: "E-mail",   en: "Email" }
+    facebook: { pl: "Facebook", en: "Facebook" }
+  form_title: { pl: "Zapytaj o wolny termin", en: "Enquire about your dates" }
+  form:
+    name:   { pl: "Imię i nazwisko", en: "Your name" }
+    email:  { pl: "E-mail",          en: "Email" }
+    dates:  { pl: "Termin pobytu",   en: "Dates" }
+    guests: { pl: "Liczba osób",     en: "Guests" }
+    house:  { pl: "Który domek?",    en: "Which house?" }
+    house_any: { pl: "Jeszcze nie wiem", en: "Not sure yet" }
+    msg:    { pl: "Wiadomość",       en: "Message" }
+    send:   { pl: "Wyślij zapytanie", en: "Send enquiry" }
+    ok:     { pl: "Dziękujemy! Odezwiemy się najszybciej, jak to możliwe.", en: "Thank you! We'll get back to you as soon as we can." }
+  map_label: { pl: "Teleśnica Oszwarowa, Bieszczady", en: "Teleśnica Oszwarowa, Bieszczady" }
+
+# ---------- STOPKA / FOOTER ----------
+footer:
+  blurb: { pl: "Dwa drewniane domki w jednym dachu, w sercu Bieszczadów. Cisza, las i gospodarze, którzy traktują Was jak rodzinę.", en: "Two wooden houses under one roof, in the heart of the Bieszczady. Silence, forest, and hosts who treat you like family." }
+  columns:
+    - { title: { pl: "Nawigacja", en: "Explore" }, links: [ { pl: Gospodarze, en: Your hosts }, { pl: Domki, en: The houses }, { pl: Atrakcje, en: Things to do }, { pl: Opinie, en: Reviews } ] }
+    - { title: { pl: "Pobyt", en: "Your stay" },     links: [ { pl: Cennik, en: Prices }, { pl: Regulamin, en: "House rules" }, { pl: Dojazd, en: "Getting here" }, { pl: "Dla zwierząt", en: Pets } ] }
+  contact_title: { pl: "Kontakt", en: "Contact" }   # ta kolumna buduje się z sekcji 'site'
+  copy: { pl: "© 2026 bieszkacje.pl — prowadzone z sercem w Bieszczadach.", en: "© 2026 bieszkacje.pl — run with heart in the Bieszczady." }
