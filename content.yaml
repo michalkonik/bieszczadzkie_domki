@@ -83,7 +83,7 @@ houses:
     lede:
       pl: "Przestronny domek na jednym poziomie — wygodny dla rodziny z dziećmi i dla starszych gości. W pełni wyposażona kuchnia i miejsce, w którym chce się zostać dłużej."
       en: "A spacious single-level house — easy for families with kids and older guests alike. A fully equipped kitchen and a place you'll want to linger in."
-    price:      "od 450"
+    price:      "od 250"
     price_unit: { pl: "zł / noc", en: "PLN / night" }
     features:
       - { icon: users, t: { pl: "4–6 osób",            en: "sleeps 4–6" } }
@@ -97,7 +97,7 @@ houses:
     lede:
       pl: "Kameralny, dwupoziomowy domek z sypialniami na piętrze. Idealny na rodzinną przygodę — na dole wspólny salon, na górze cichy sen pod skosami dachu."
       en: "A cosy two-storey house with bedrooms upstairs. Perfect for a family adventure — a shared living room below, quiet sleep under the eaves above."
-    price:      "od 380"
+    price:      "od 250"
     price_unit: { pl: "zł / noc", en: "PLN / night" }
     features:
       - { icon: users,  t: { pl: "4–6 osób",        en: "sleeps 4–6" } }
@@ -115,7 +115,7 @@ attractions:
     pl: "Od progu domku w kilkanaście minut jesteście nad wodą albo na szlaku. A dalej czeka cały dziki region."
     en: "From the doorstep you're at the water or on a trail within minutes. And beyond that, a whole wild region awaits."
   tabs:
-    - { id: nearby, label: { pl: "W okolicy",  en: "Nearby" } }
+    - { id: nearby, label: { pl: "Na terenie gospodarstwa",  en: "On the estate" } }
     - { id: region, label: { pl: "Cały region", en: "Wider region" } }
   # Każda zakładka to pokaz slajdów budowany automatycznie z folderu.
   # Liczba zdjęć/filmów = liczba plików w folderze; tytuły z nazw plików.
