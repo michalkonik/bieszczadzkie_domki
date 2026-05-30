@@ -73,37 +73,37 @@ houses_section:
   eyebrow: { pl: "Nasze domki", en: "The houses" }
   title:   { pl: "Dwa domki w jednym dachu", en: "Two homes under one roof" }
   lede:
-    pl: "Oba domki mieszczą się w jednym drewnianym budynku, rozdzielone ścianą — niezależne wejścia, pełna prywatność. Każdy pomieści od 4 do 6 osób."
-    en: "Both houses share one wooden building, divided by a wall — separate entrances, full privacy. Each sleeps 4 to 6 guests."
+    pl: "Oba domki mieszczą się w jednym murowanym budynku, rozdzielone grubą ścianą — niezależne wejścia, pełna prywatność. Każdy pomieści od 4 do 6 osób."
+    en: "Both houses share one building, divided by a wall — separate entrances, full privacy. Each sleeps 4 to 6 guests."
 
 # ---------- DOMKI / THE HOUSES ----------
 houses:
   - num: "01"
-    name: { pl: "Domek większy", en: "The larger house" }
+    name: { pl: "Domek dwupiętrowy", en: "The 2 floor house" }
     lede:
-      pl: "Przestronny domek na jednym poziomie — wygodny dla rodziny z dziećmi i dla starszych gości. W pełni wyposażona kuchnia i miejsce, w którym chce się zostać dłużej."
-      en: "A spacious single-level house — easy for families with kids and older guests alike. A fully equipped kitchen and a place you'll want to linger in."
+      pl: "Przestronny domek dwupoziomowy domek z sypialnią na piętrze — wygodny dla rodziny z dziećmi. W pełni wyposażona kuchnia i miejsce, w którym chce się zostać dłużej."
+      en: "A spacious two-level house — easy for families with kids. A fully equipped kitchen and a place you'll want to linger in."
     price:      "od 250"
     price_unit: { pl: "zł / noc", en: "PLN / night" }
     features:
       - { icon: users, t: { pl: "4–6 osób",            en: "sleeps 4–6" } }
-      - { icon: home,  t: { pl: "na jednym poziomie",  en: "single level" } }
+      - { icon: home,  t: { pl: "na dwuch poziomach",  en: "two levels" } }
       - { icon: flame, t: { pl: "w pełni wyposażony",  en: "fully equipped" } }
       - { icon: dog,   t: { pl: "przyjazny zwierzętom", en: "pet friendly" } }
     # Zdjęcia pobierane automatycznie z folderu photos/house_1
     photos_folder: house_1
   - num: "02"
-    name: { pl: "Domek mniejszy", en: "The smaller house" }
+    name: { pl: "Domek jedno-piętrowy", en: "The single-level house" }
     lede:
-      pl: "Kameralny, dwupoziomowy domek z sypialniami na piętrze. Idealny na rodzinną przygodę — na dole wspólny salon, na górze cichy sen pod skosami dachu."
-      en: "A cosy two-storey house with bedrooms upstairs. Perfect for a family adventure — a shared living room below, quiet sleep under the eaves above."
+      pl: "Kameralny, jedno-piętrowy domek. Idealny na rodzinną przygodę — na dole wspólny salon, na górze cichy sen pod skosami dachu."
+      en: "A cosy single-level house. Perfect for a family adventure — a shared living room below, quiet sleep under the eaves above."
     price:      "od 250"
     price_unit: { pl: "zł / noc", en: "PLN / night" }
     features:
       - { icon: users,  t: { pl: "4–6 osób",        en: "sleeps 4–6" } }
-      - { icon: layers, t: { pl: "dwa poziomy",     en: "two floors" } }
-      - { icon: wifi,   t: { pl: "Wi-Fi i kuchnia", en: "Wi-Fi + kitchen" } }
-      - { icon: tent,   t: { pl: "miejsce na ognisko", en: "fire pit" } }
+      - { icon: home,   t: { pl: "na jednym poziomie",  en: "single level" } }
+      - { icon: flame,  t: { pl: "w pełni wyposażony",  en: "fully equipped" } }
+      - { icon: dog,    t: { pl: "przyjazny zwierzętom", en: "pet friendly" } }
     # Zdjęcia pobierane automatycznie z folderu photos/house_2
     photos_folder: house_2
 
@@ -127,14 +127,19 @@ reviews:
   eyebrow: { pl: "Opinie gości", en: "Guest reviews" }
   title:   { pl: "Wracają do nas całymi rodzinami", en: "Guests return — whole families of them" }
   score:   "5,0"
-  count:   { pl: "na podstawie 128 opinii", en: "from 128 reviews" }
+  count:   { pl: "na podstawie 10 opinii", en: "from 10 reviews" }
   items:
-    - { name: "Marta Kowalska",      color: "#a8651f", when: { pl: "2 tygodnie temu", en: "2 weeks ago" }, text: { pl: "Najpiękniejszy urlop od lat. Domek pachnący drewnem, rano mgła nad doliną, a wieczorem ognisko i niebo pełne gwiazd. Muszka odprowadzała nas na każdy spacer ❤️", en: "The most beautiful holiday in years. A house smelling of wood, mist over the valley at dawn, a fire and a sky full of stars at night. Muszka walked us on every hike ❤️" } }
-    - { name: "Piotr Adamczyk",      color: "#4d6149", when: { pl: "miesiąc temu", en: "a month ago" }, text: { pl: "Genowefa i Adam to najcieplejsi gospodarze, jakich spotkaliśmy. Cisza, drewno i absolutny spokój — lepiej się nie da.", en: "Genowefa and Adam are the warmest hosts we've ever met. Quiet, wood and total calm — it doesn't get better." } }
-    - { name: "Anna Nowak",          color: "#758c8f", when: { pl: "miesiąc temu", en: "a month ago" }, text: { pl: "Cisza, las i absolutny spokój. Dzieci nie chciały wracać do domu. Już rezerwujemy na przyszły rok!", en: "Silence, forest and total peace. The kids didn't want to go home. Already booking for next year!" } }
-    - { name: "Tomasz Lewandowski",  color: "#c2782a", when: { pl: "2 miesiące temu", en: "2 months ago" }, text: { pl: "Idealna baza wypadowa nad Solinę i w góry. Wszystko dopięte na ostatni guzik, a koty rozkradły nam serca.", en: "A perfect base for Solina and the mountains. Everything thought through, and the cats stole our hearts." } }
-    - { name: "Karolina Wójcik",     color: "#6b5c44", when: { pl: "3 miesiące temu", en: "3 months ago" }, text: { pl: "Drugi raz i na pewno nie ostatni. Tu naprawdę można zwolnić i odetchnąć daleko od miasta.", en: "Our second time and certainly not the last. You can truly slow down and breathe far from the city here." } }
-    - { name: "Michał Zieliński",    color: "#2e3d2f", when: { pl: "3 miesiące temu", en: "3 months ago" }, text: { pl: "Dwa domki, jeden spokój. Polecamy każdemu, kto marzy o prawdziwych Bieszczadach.", en: "Two houses, one deep calm. We recommend it to anyone dreaming of the real Bieszczady." } }
+    - { name: "Marta Grzyb", color: "#a8651f", when: { pl: "9 maja 2025", en: "May 9, 2025" }, text: { pl: "Polecam wszystkim, szczególnie rodzinom z dziećmi. Pani Babcia i Pan Dziadek sprawili, że czuliśmy się jak u siebie. Na pewno wrócimy 🤩", en: "I recommend it to everyone, especially families with kids. Grandma and Grandpa made us feel right at home. We will definitely come back 🤩" } }
+    - { name: "Ilona Szabat", color: "#4d6149", when: { pl: "9 maja 2025", en: "May 9, 2025" }, text: { pl: "Relaks dla ciała i duszy, przepiękna okolica, gospodarze fantastyczni! Polecam miejsce dla osób z dziećmi, ogromny plac zabaw, nie ma nudy! Cisza, spokój, pyszna szarlotka z lodami od Pani Gospodyni i super zabawa dla dzieciaków! Polecam.", en: "Relax for the body and soul, a beautiful area, fantastic hosts! I recommend this place for families with children, a huge playground, never boring! Quiet, peaceful, delicious apple pie with ice cream from the hostess, and great fun for the kids! Highly recommended." } }
+    - { name: "Honorata Sawicka", color: "#758c8f", when: { pl: "24 sierpnia 2024", en: "August 24, 2024" }, text: { pl: "Sielsko i anielsko. Pobyt u Pani Gieni i Pana Adama to jak podróż w czasie. Rozgwieżdżone niebo, szum strumyka, ciemność jak tylko w Bieszczadach, cisza rano, mgła na łące, a za domem niesamowite widoki. To miejsce dla tych, którzy chcą poczytać w spokoju książkę patrząc na pole malin i ziemniaczków, spędzić wakacje z psem, poleżeć na hamaku, ochłodzić się w basenie, pozaczepiać Feliksa, pograć w planszówki czy piłkarzyki. To wspomnienie wiejskiego lata z dzieciństwa. To miejsce dla tych, którzy omijają tłok Soliny wielkim łukiem. Byliśmy zdecydowanie za krótko, w przyszłym roku się poprawimy. Pozdrawiamy Panią Gienię, Pana Adama i córki Renatę oraz Anetę z rodzinami. Tu jesteście na wakacjach u rodziny, która jest zwykła i przez to niezwykła.", en: "Idyllic and angelic. Staying with Pani Gienia and Pan Adam felt like traveling back in time. Starry skies, the sound of the stream, the kind of darkness you only get in the Bieszczady, morning silence, mist on the meadow, and amazing views behind the house. This is a place for those who want to read a book quietly while looking at the raspberry and potato field, spend vacation with a dog, lie in a hammock, cool off in the pool, tease Feliks, and play board games or table football. It is a memory of a country summer from childhood. It is for those who avoid the crowds at Solina. We stayed far too short; next year we will do better. Greetings to Pani Gienia, Pan Adam and daughters Renata and Aneta with their families. Here you are on holiday with family that is ordinary and therefore extraordinary." } }
+    - { name: "Karolina Pawicka", color: "#c2782a", when: { pl: "28 sierpnia 2022", en: "August 28, 2022" }, text: { pl: "Cudowne, spokojne miejsce i wspaniali Gospodarze. Polecam z całego serca każdemu, komu zależy na odpoczynku od codziennego zgiełku. Wraz z naszymi piesiurami serdecznie dziękujemy za gościnę.", en: "A wonderful, peaceful place and wonderful hosts. I wholeheartedly recommend it to anyone who wants a break from everyday noise. Along with our dogs, we warmly thank you for your hospitality." } }
+    - { name: "Aleksandra Kucewicz", color: "#6b5c44", when: { pl: "4 maja 2022", en: "May 4, 2022" }, text: { pl: "Wspaniałe miejsce. Piękna, cicha okolica, bardzo wygodny domek, niezwykle przyjazna atmosfera. Bardzo polecam!", en: "A wonderful place. Beautiful, quiet surroundings, a very comfortable cottage, and an incredibly friendly atmosphere. I highly recommend it!" } }
+    - { name: "Danuta Brzozowska", color: "#2e3d2f", when: { pl: "27 czerwca 2021", en: "June 27, 2021" }, text: { pl: "Wspaniałe miejsce, bardzo gościnni właściciele, życzliwi oraz pomocni. Polecamy na chwilę wytchnienia od codzienności, zatracenia się w naturze, która jest na wyciągnięcie ręki. Ostoja spokoju i pięknych widoków. Serdecznie polecamy i pozdrawiamy ciepło właścicieli. Na pewno jeszcze się spotkamy!", en: "A wonderful place, very hospitable owners, kind and helpful. We recommend it for a moment of respite from everyday life and to lose yourself in nature that is within reach. A haven of calm and beautiful views. We warmly recommend it and send our best regards to the owners. We will definitely meet again!" } }
+    - { name: "Nowaczek Katarzyna", color: "#a8651f", when: { pl: "4 czerwca 2021", en: "June 4, 2021" }, text: { pl: "Super miejsce, czysto, cicho, grill, podwórko, polecam z całego serca!", en: "Great place, clean, quiet, grill, yard, I recommend it from the bottom of my heart!" } }
+    - { name: "Aleksandra Lis", color: "#4d6149", when: { pl: "3 sierpnia 2020", en: "August 3, 2020" }, text: { pl: "Świetne warunki, cisza, spokój, dowolność spędzania czasu. Mega przekochana Pani Genowefa, serce tego miejsca, dzięki tej Pani to miejsce jest milion razy cudowniejsze. Bardzo polecam!", en: "Great conditions, quiet, peaceful, freedom to spend time as you wish. Super lovely Pani Genowefa, the heart of this place — thanks to her it is a million times more wonderful. Highly recommend!" } }
+    - { name: "Dominik Zagórowicz", color: "#758c8f", when: { pl: "29 lipca 2020", en: "July 29, 2020" }, text: { pl: "Dziękujemy za wspaniały pobyt. Gorąco polecamy to miejsce, zarówno dla dzieci jak i dorosłych. Można w ciszy i z dala od tłumów w miłym towarzystwie Gospodarzy odpocząć i posłuchać przepięknych opowieści o Bieszczadach. Po powrocie do domu Zosia i Antek do tej pory zastanawiają się co robi Łatek i Kłopotki. Gorąco pozdrawiamy i mówimy do zobaczenia.", en: "Thank you for a wonderful stay. We warmly recommend this place for both children and adults. You can relax in peace away from the crowds, enjoy the hosts' company, and listen to beautiful stories about the Bieszczady. After returning home, Zosia and Antek still wonder what Łatek and Kłopotki are doing. Warm greetings and see you again." } }
+    - { name: "Karolina Gruszczyńska", color: "#c2782a", when: { pl: "22 lipca 2020", en: "July 22, 2020" }, text: { pl: "Polecam, szczególnie dla rodzin z dziećmi. Cisza, spokój i bardzo sympatyczni Gospodarze. Idealne miejsce na odpoczynek od codzienności.", en: "I recommend it, especially for families with children. Quiet, peaceful, and very friendly hosts. An ideal place to relax away from everyday life." } }
+    - { name: "Daga Lach", color: "#2e3d2f", when: { pl: "19 maja 2020", en: "May 19, 2020" }, text: { pl: "Bardzo polecam! Piękne miejsce, bardzo blisko do zatoki Solińskiej. Gospodarze bardzo fajni! Na pewno wrócimy 🙂", en: "I highly recommend it! A beautiful place, very close to the Solina bay. The hosts are very nice! We will definitely return 🙂" } }
 
 # ---------- KONTAKT / CONTACT ----------
 contact:
