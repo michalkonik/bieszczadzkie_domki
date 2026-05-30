@@ -73,16 +73,16 @@ houses_section:
   eyebrow: { pl: "Nasze domki", en: "The houses" }
   title:   { pl: "Dwa domki w jednym dachu", en: "Two homes under one roof" }
   lede:
-    pl: "Oba domki mieszczą się w jednym murowanym budynku, rozdzielone grubą ścianą — niezależne wejścia, pełna prywatność. Każdy pomieści od 4 do 6 osób."
-    en: "Both houses share one building, divided by a wall — separate entrances, full privacy. Each sleeps 4 to 6 guests."
+    pl: "Oba domki mieszczą się w jednym budynku obok domu gospodarzy. Przedni ogród jest wspólny, ale teren jest duży, więc każdy ma prywatny, spokojny zakątek. Goście często spotykają się wieczorami przy grillu i ognisku, a gospodarze chętnie dołączają do rozmów. Jeden router LTE zapewnia szybkie Wi-Fi dla obu domków, a każdy ma w pełni wyposażoną kuchnię, łazienkę i telewizor."
+    en: "Both houses are in the same building near the hosts' home. The front yard is shared, but the property is large enough for privacy and quiet corners. Guests often spend evenings together by the grill and fire pit, and the hosts like to join for relaxed talks. One LTE router provides fast Wi-Fi for both houses, and each has a fully equipped kitchen, bathroom and TV."
 
 # ---------- DOMKI / THE HOUSES ----------
 houses:
   - num: "01"
     name: { pl: "Domek dwupiętrowy", en: "The 2 floor house" }
     lede:
-      pl: "Przestronny domek dwupoziomowy domek z sypialnią na piętrze — wygodny dla rodziny z dziećmi. W pełni wyposażona kuchnia i miejsce, w którym chce się zostać dłużej."
-      en: "A spacious two-level house — easy for families with kids. A fully equipped kitchen and a place you'll want to linger in."
+      pl: "Przestronny dwupoziomowy domek z sypialnią na piętrze — wygodny dla rodziny z dziećmi. W pełni wyposażona kuchnia, łazienka i miejsce, w którym chce się zostać dłużej."
+      en: "A spacious two-level house with a bedroom upstairs — perfect for families with kids. It has a fully equipped kitchen, bathroom and a place you'll want to linger in."
     price:      "od 250"
     price_unit: { pl: "zł / noc", en: "PLN / night" }
     features:
@@ -95,8 +95,8 @@ houses:
   - num: "02"
     name: { pl: "Domek jedno-piętrowy", en: "The single-level house" }
     lede:
-      pl: "Kameralny, jedno-piętrowy domek. Idealny na rodzinną przygodę — na dole wspólny salon, na górze cichy sen pod skosami dachu."
-      en: "A cosy single-level house. Perfect for a family adventure — a shared living room below, quiet sleep under the eaves above."
+      pl: "Kameralny, jedno-piętrowy domek. Idealny na rodzinną przygodę — na dole wspólny salon, na górze cichy sen pod skosami dachu. W pełni wyposażona kuchnia i łazienka."
+      en: "A cosy single-level house. Perfect for a family adventure — a shared living room below, quiet sleep under the eaves above. It has a fully equipped kitchen and bathroom."
     price:      "od 250"
     price_unit: { pl: "zł / noc", en: "PLN / night" }
     features:
